@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov 18 22:00:10 2025
+# Process ID: 28844
+# Current directory: C:/Users/gxy/Documents/WeChat Files/wxid_0qvoprvvcvtg22/FileStorage/File/2025-11/user_pro/user_pro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8780 C:\Users\gxy\Documents\WeChat Files\wxid_0qvoprvvcvtg22\FileStorage\File\2025-11\user_pro\user_pro\user_top.xpr
+# Log file: C:/Users/gxy/Documents/WeChat Files/wxid_0qvoprvvcvtg22/FileStorage/File/2025-11/user_pro/user_pro/vivado.log
+# Journal file: C:/Users/gxy/Documents/WeChat Files/wxid_0qvoprvvcvtg22/FileStorage/File/2025-11/user_pro/user_pro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/gxy/Documents/WeChat Files/wxid_0qvoprvvcvtg22/FileStorage/File/2025-11/user_pro/user_pro/user_top.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/gxy/Documents/WeChat Files/wxid_0qvoprvvcvtg22/FileStorage/File/2025-11/user_pro/user_pro'
+INFO: [Project 1-313] Project file moved from 'F:/ziliao/ku60/user_top/user_top' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'system_bd_ddr4_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'system_bd_proc_sys_reset_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'system_bd_util_vector_logic_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'system_bd_util_ds_buf_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'system_bd_ila_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'system_bd_ila_0_1_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/gxy/Documents/WeChat Files/wxid_0qvoprvvcvtg22/FileStorage/File/2025-11/user_pro/user_pro/user_top.ip_user_files', nor could it be found using path 'F:/ziliao/ku60/user_top/user_top/user_top.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ruanjian/Vivado/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 978.270 ; gain = 284.926
+update_compile_order -fileset sources_1
