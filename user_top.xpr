@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="F:/ziliao/ku60/user_top/user_top/user_top.xpr">
+<Project Version="7" Minor="44" Path="D:/fpga/xdma_axi/user_top.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="382a69b23f86440ba16ea81c6ac4630b"/>
@@ -21,6 +21,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../myip/aes128"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -64,11 +65,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="system_bd.bd" FileRelPathName="ip/system_bd_ila_0_0/system_bd_ila_0_0.xci">
+          <Proxy FileSetName="system_bd_ila_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system_bd.bd" FileRelPathName="ip/system_bd_ila_0_1/system_bd_ila_0_1.xci">
+          <Proxy FileSetName="system_bd_ila_0_1"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="system_bd.bd" FileRelPathName="ip/system_bd_ddr4_0_0/system_bd_ddr4_0_0.xci">
           <Proxy FileSetName="system_bd_ddr4_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system_bd.bd" FileRelPathName="ip/system_bd_util_vector_logic_0_0/system_bd_util_vector_logic_0_0.xci">
-          <Proxy FileSetName="system_bd_util_vector_logic_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="system_bd.bd" FileRelPathName="ip/system_bd_proc_sys_reset_0_0/system_bd_proc_sys_reset_0_0.xci">
           <Proxy FileSetName="system_bd_proc_sys_reset_0_0"/>
@@ -76,11 +80,8 @@
         <CompFileExtendedInfo CompFileName="system_bd.bd" FileRelPathName="ip/system_bd_util_ds_buf_0_0/system_bd_util_ds_buf_0_0.xci">
           <Proxy FileSetName="system_bd_util_ds_buf_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system_bd.bd" FileRelPathName="ip/system_bd_ila_0_0/system_bd_ila_0_0.xci">
-          <Proxy FileSetName="system_bd_ila_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system_bd.bd" FileRelPathName="ip/system_bd_ila_0_1/system_bd_ila_0_1.xci">
-          <Proxy FileSetName="system_bd_ila_0_1"/>
+        <CompFileExtendedInfo CompFileName="system_bd.bd" FileRelPathName="ip/system_bd_util_vector_logic_0_0/system_bd_util_vector_logic_0_0.xci">
+          <Proxy FileSetName="system_bd_util_vector_logic_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/include/user_parameter.vh">
@@ -210,81 +211,70 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="11">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xcku060-ffva1156-2-i" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xcku060-ffva1156-2-i" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="system_bd_ddr4_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_bd_ddr4_0_0" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_ddr4_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/system_bd_ddr4_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="system_bd_ddr4_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_bd_ddr4_0_0" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_ddr4_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="system_bd_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_bd_proc_sys_reset_0_0" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/system_bd_proc_sys_reset_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="system_bd_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_bd_proc_sys_reset_0_0" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="system_bd_util_vector_logic_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_bd_util_vector_logic_0_0" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_util_vector_logic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/system_bd_util_vector_logic_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="system_bd_util_vector_logic_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_bd_util_vector_logic_0_0" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_util_vector_logic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="system_bd_util_ds_buf_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_bd_util_ds_buf_0_0" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_util_ds_buf_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/system_bd_util_ds_buf_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="system_bd_util_ds_buf_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_bd_util_ds_buf_0_0" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_util_ds_buf_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="system_bd_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_bd_ila_0_0" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_ila_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/system_bd_ila_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="system_bd_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_bd_ila_0_0" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_ila_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="system_bd_ila_0_1_synth_1" Type="Ft3:Synth" SrcSet="system_bd_ila_0_1" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_ila_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/system_bd_ila_0_1_synth_1" IncludeInArchive="true">
+    <Run Id="system_bd_ila_0_1_synth_1" Type="Ft3:Synth" SrcSet="system_bd_ila_0_1" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_ila_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xcku060-ffva1156-2-i" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xcku060-ffva1156-2-i" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
@@ -297,7 +287,6 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
@@ -372,9 +361,7 @@
     </Run>
     <Run Id="system_bd_ila_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_ila_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="system_bd_ila_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -391,9 +378,7 @@
     </Run>
     <Run Id="system_bd_ila_0_1_impl_1" Type="Ft2:EntireDesign" Part="xcku060-ffva1156-2-i" ConstrsSet="system_bd_ila_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="system_bd_ila_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
