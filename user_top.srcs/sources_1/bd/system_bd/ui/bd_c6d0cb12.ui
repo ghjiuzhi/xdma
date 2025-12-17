@@ -1,56 +1,59 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.714286",
-   "Default View_TopLeft":"-434,0",
+   "Default View_ScaleFactor":"0.587587",
+   "Default View_TopLeft":"-109,140",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port user_axilite -pg 1 -lvl 4 -x 1000 -y 830 -defaultsOSRD
-preplace port DDR4 -pg 1 -lvl 4 -x 1000 -y 60 -defaultsOSRD
-preplace port ddr4_test -pg 1 -lvl 0 -x -10 -y 160 -defaultsOSRD
-preplace port pcie_mgt -pg 1 -lvl 4 -x 1000 -y 850 -defaultsOSRD
-preplace port pcie_clk -pg 1 -lvl 0 -x -10 -y 840 -defaultsOSRD
-preplace port ddr4_sys_clk -pg 1 -lvl 0 -x -10 -y 80 -defaultsOSRD
-preplace port pcie_axi_aclk -pg 1 -lvl 4 -x 1000 -y 560 -defaultsOSRD
-preplace port pcie_axi_aresetn -pg 1 -lvl 4 -x 1000 -y 580 -defaultsOSRD
-preplace port ddr4_user_clk -pg 1 -lvl 4 -x 1000 -y 220 -defaultsOSRD
-preplace port init_calib_complete -pg 1 -lvl 4 -x 1000 -y 80 -defaultsOSRD
-preplace port pcie_link_up -pg 1 -lvl 4 -x 1000 -y 750 -defaultsOSRD
-preplace port pcie_rstn -pg 1 -lvl 0 -x -10 -y 910 -defaultsOSRD
-preplace portBus ddr4_user_rstn -pg 1 -lvl 4 -x 1000 -y 540 -defaultsOSRD
-preplace portBus pice_irq -pg 1 -lvl 0 -x -10 -y 930 -defaultsOSRD
-preplace inst xdma_0 -pg 1 -lvl 2 -x 580 -y 900 -defaultsOSRD
-preplace inst ddr4_0 -pg 1 -lvl 2 -x 580 -y 110 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 580 -y 650 -defaultsOSRD
-preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 210 -y 230 -defaultsOSRD
-preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 210 -y 460 -defaultsOSRD
-preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x 210 -y 840 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 3 -x 890 -y 920 -defaultsOSRD
-preplace inst ila_1 -pg 1 -lvl 3 -x 890 -y 150 -defaultsOSRD
-preplace netloc xdma_0_axi_aclk 1 0 4 40 520 NJ 520 790 560 NJ
-preplace netloc xdma_0_axi_aresetn 1 0 4 50 530 NJ 530 770 580 NJ
-preplace netloc ddr4_0_c0_ddr4_ui_clk 1 0 4 20 50 390 220 780 220 NJ
-preplace netloc ddr4_0_c0_init_calib_complete 1 2 2 790 80 NJ
-preplace netloc ddr4_0_c0_ddr4_ui_clk_sync_rst 1 1 2 410 540 760
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 4 30 60 410 230 780 540 NJ
-preplace netloc xdma_0_user_lnk_up 1 0 4 60 750 NJ 750 800 750 NJ
-preplace netloc util_vector_logic_0_Res 1 1 1 380J 140n
-preplace netloc sys_rst_n_0_1 1 0 2 NJ 910 NJ
-preplace netloc util_ds_buf_0_IBUF_OUT 1 1 1 400 830n
-preplace netloc util_ds_buf_0_IBUF_DS_ODIV2 1 1 1 370 850n
-preplace netloc usr_irq_req_0_1 1 0 2 NJ 930 NJ
-preplace netloc diff_clock_rtl_0_1 1 0 2 10J 70 400J
-preplace netloc ddr4_0_C0_DDR4 1 2 2 NJ 60 NJ
-preplace netloc xdma_0_M_AXI_LITE 1 2 2 NJ 830 NJ
-preplace netloc xdma_0_M_AXI 1 0 3 50 80 370J 240 750
-preplace netloc axi_interconnect_0_M00_AXI 1 1 1 360 100n
-preplace netloc S01_AXI_0_1 1 0 1 NJ 160
-preplace netloc xdma_0_pcie_mgt 1 2 2 NJ 850 NJ
-preplace netloc CLK_IN_D_0_1 1 0 1 NJ 840
-levelinfo -pg 1 -10 210 580 890 1000
-pagesize -pg 1 -db -bbox -sgen -150 0 1180 1050
+preplace port user_axilite -pg 1 -lvl 4 -x 970 -y 700 -defaultsOSRD
+preplace port DDR4 -pg 1 -lvl 4 -x 970 -y 430 -defaultsOSRD
+preplace port ddr4_test -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port pcie_mgt -pg 1 -lvl 4 -x 970 -y 720 -defaultsOSRD
+preplace port pcie_clk -pg 1 -lvl 0 -x 0 -y 870 -defaultsOSRD
+preplace port ddr4_sys_clk -pg 1 -lvl 0 -x 0 -y 450 -defaultsOSRD
+preplace port pcie_axi_aclk -pg 1 -lvl 4 -x 970 -y 540 -defaultsOSRD
+preplace port pcie_axi_aresetn -pg 1 -lvl 4 -x 970 -y 560 -defaultsOSRD
+preplace port ddr4_user_clk -pg 1 -lvl 4 -x 970 -y 290 -defaultsOSRD
+preplace port init_calib_complete -pg 1 -lvl 4 -x 970 -y 450 -defaultsOSRD
+preplace port pcie_link_up -pg 1 -lvl 4 -x 970 -y 740 -defaultsOSRD
+preplace port pcie_rstn -pg 1 -lvl 0 -x 0 -y 780 -defaultsOSRD
+preplace portBus ddr4_user_rstn -pg 1 -lvl 4 -x 970 -y 160 -defaultsOSRD
+preplace portBus pice_irq -pg 1 -lvl 0 -x 0 -y 800 -defaultsOSRD
+preplace inst xdma_0 -pg 1 -lvl 2 -x 570 -y 770 -defaultsOSRD
+preplace inst ddr4_0 -pg 1 -lvl 2 -x 570 -y 480 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 570 -y 260 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 210 -y 260 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 210 -y 510 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x 210 -y 870 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 860 -y 630 -defaultsOSRD
+preplace inst ila_1 -pg 1 -lvl 3 -x 860 -y 360 -defaultsOSRD
+preplace inst aes128_0 -pg 1 -lvl 2 -x 570 -y 80 -defaultsOSRD
+preplace netloc xdma_0_axi_aclk 1 0 4 50 590 NJ 590 770 540 NJ
+preplace netloc xdma_0_axi_aresetn 1 0 4 30 620 NJ 620 740 560 NJ
+preplace netloc ddr4_0_c0_ddr4_ui_clk 1 0 4 40 440 370 360 750 290 NJ
+preplace netloc ddr4_0_c0_init_calib_complete 1 2 2 770 450 NJ
+preplace netloc ddr4_0_c0_ddr4_ui_clk_sync_rst 1 1 2 400 370 740
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 4 60 430 390 160 740 160 NJ
+preplace netloc xdma_0_user_lnk_up 1 0 4 60 610 NJ 610 760 740 NJ
+preplace netloc util_vector_logic_0_Res 1 1 1 NJ 510
+preplace netloc sys_rst_n_0_1 1 0 2 NJ 780 NJ
+preplace netloc util_ds_buf_0_IBUF_OUT 1 1 1 390 760n
+preplace netloc util_ds_buf_0_IBUF_DS_ODIV2 1 1 1 370 740n
+preplace netloc usr_irq_req_0_1 1 0 2 NJ 800 NJ
+preplace netloc xdma_0_pcie_mgt 1 2 2 NJ 720 NJ
+preplace netloc CLK_IN_D_0_1 1 0 1 NJ 870
+preplace netloc diff_clock_rtl_0_1 1 0 2 NJ 450 NJ
+preplace netloc ddr4_0_C0_DDR4 1 2 2 NJ 430 NJ
+preplace netloc xdma_0_M_AXI_LITE 1 2 2 NJ 700 NJ
+preplace netloc xdma_0_M_AXI 1 0 3 20 600 NJ 600 750
+preplace netloc axi_interconnect_0_M00_AXI 1 1 1 380 250n
+preplace netloc S01_AXI_0_1 1 0 1 NJ 170
+preplace netloc axi_interconnect_0_M01_AXI 1 1 1 360 60n
+levelinfo -pg 1 0 210 570 860 970
+pagesize -pg 1 -db -bbox -sgen -140 0 1150 940
 "
 }
 {
+   "da_axi4_cnt":"1",
    "da_board_cnt":"1"
 }
